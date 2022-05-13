@@ -20,6 +20,15 @@ int main()
 		decimal = decimal * 10;
 	}
 	n = 0;
+	decimal = 1;
+	while (pila != NULL) {
+		numero2 = pop(pila) * decimal;
+		n = n + numero2;
+		decimal = decimal * 10;
+
+	}
+	cout << "numero invertido:";
+	cout << n << endl;
 
 	return 0;
 }
